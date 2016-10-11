@@ -10,7 +10,7 @@ var config2 = {
 	origin: 'bottom', 
 	distance: '200px',
 	duration: 1000,
-} 
+}
 
 var config3 = {
 	origin: 'right', 
@@ -44,6 +44,11 @@ var config_google = {
 	delay: 900,
 }
 
+var config_ciusines = {
+	distance: '200px', 
+	viewFactor: 1
+}
+
 
 sr.reveal('.b-columns__column_1', config1);
 sr.reveal('.b-columns__column_2', config2);
@@ -52,3 +57,4 @@ sr.reveal('.b-app__main-image', config_iphone);
 sr.reveal('.b-app__main-article', config_article);
 sr.reveal('.b-app__link_apple', config_apple);
 sr.reveal('.b-app__link_google', config_google);
+sr.reveal('.b-ciusunes__list-item', config_ciusines);
