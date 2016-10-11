@@ -11,238 +11,251 @@
 </head> 
 
 <body>
-    <header> 
-        <div id='logo'>
-            <a id='a_logo' href='index.html'><img src='images/buttons/logo.png'></a>
+    <header class='b-header'> 
+        <div class='b-header__logo'>
+            <a id='b-header__logo__link' href='index.html'><img src='images/buttons/logo.png'></a>
         </div> 
-        <nav>
-            <ul>
-                <li id='menu'><img id='menu_img' src='images/buttons/menu_button.png'></li>
-                <li><a href='#'>SIGN UP</a></li>
-                <li><a href='#'>LOG IN</a></li>
+        <nav class='b-header__nav'>
+            <ul class='b-header__menu'>
+                <li class='b-header__menu-item'><img class='b-header__menu__listitem__img' src='images/buttons/menu_button.png'></li>
+                <li class='b-header__menu-item'><a href='#'>SIGN UP</a></li>
+                <li class='b-header__menu-item'><a href='#'>LOG IN</a></li>
             </ul>
         </nav>
-        
-        
     </header>
     
-    <main id='main'>
-        <section id='main_banner'> 
-            <div id='recipes'>
-                <div id='favorite'> <p> Find your Favorite </p></div>
-                <div id='recipesHeader'><p> RECIPES </p></div>
-                <div id='getStarted'><a href="#">GET STARTED </a> </div>
-                <div id='sendRecipes'><p> OR SEND US YOUR OWN RECIPES AND <span>GET AWARDED!</span> </p> </div>
-            </div>
-            
-        </section>
-        
-        <section id='columns'>
-            <div class='columns_inspired column'>
-                <img class='img_columns' src='images/main_content/columns/hamburger.png'>
-                <div class='after'><h3>GET INSPIRED</h3></div> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. </p> 
-                <p> Aliquam erat volutpat. </p>
-            </div>            
-            <div class='columns_rewarded column'>
-                <img class='img_columns' src='images/main_content/columns/money.png'>
-                <div class='after'><h3>GET REWARDED</h3></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. </p> 
-                <p> Aliquam erat volutpat. </p>
-            </div>            
-            <div class='columns_social column'>
-                <img class='img_columns' src='images/main_content/columns/cook.png'>
-                <div class='after'><h3>GET SOCIAL</h3></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. </p> 
-                <p> Aliquam erat volutpat. </p>
-            </div>
-        </section>
-        
-        <section id='iphone'>
-            <img id='img_iphone'  src='images/main_content/iPhone/iPhone.png'> 
-            <article> 
-                <div class='after main_article'><h3>INTRODUCING THE FUDI APP</h3></div>
-                <p class='main_article'> Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta. </p>
-                <p class='main_article'> Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. </p>
-                <p class='main_article'> Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa. </p> </article>
-            <div class='main_article'> 
-                <a href='http://www.apple.com/' > <img src='images/buttons/appstore.png'> </a>
-                <a href='https://play.google.com'> <img src='images/buttons/googleplay.png'> </a>
-            </div>
-        </section>
-        
-        <section id='review'>
-                <a id='left'><</a>
-            <div id='slider_wrapper'> 
-                <div class='reviewdiv_1'>
-                    <img class='img_review' src='images/main_content/review/man_1.png'> 
-                    <p class='review_text'> "I am so happy because I found this recipe, and it just made my life easier. <br> 
-                        Thanks so much for sharing!" </p>
-                    <p class='author'> Michael Dawson, San Francisco, CA</p>
-                </div>            
-                <div class='reviewdiv_2'>
-                    <img class='img_review' src='images/main_content/review/man_2.png'> 
-                    <p class='review_text'> "This is the best recite, I'm gonna share with my gf. <br> 
-                        Thanks a lot!" </p>
-                    <p class='author'> Fred Baily, Washington, DC</p>
-                </div>            
-                <div class='reviewdiv_3'>
-                    <img class='img_review' src='images/main_content/review/man_3.png'> 
-                    <p class='review_text'> "This recipe just made my life easier. <br> 
-                        Thanks so much for sharing!" </p>
-                    <p class='author'> Emily Fredriksen, Philadelphia, PA</p>
+    <main class='g-main'>
+        <section class='b-main-banner'> 
+            <div class='b-main-banner__headers'>
+                <div class='b-main-banner__favorite'> 
+                    <p> Find your Favorite </p>
                 </div>
-                <div class='slider_list'>
-                    <ul class='slider_controls'>
-                        <li id='1' class='active slider_listitem'></li>
-                        <li id='2' class='slider_listitem'></li>
-                        <li id='3' class='slider_listitem'></li>
+                <div class='b-main-banner__recipes'>
+                    <p> RECIPES </p>
+                </div>
+                <div class='b-main-banner__started'>
+                    <a href="#">GET STARTED </a> 
+                </div>
+                <div class='b-main-banner__send'>
+                    <p> OR SEND US YOUR OWN RECIPES AND <span>GET AWARDED!</span> </p> 
+                </div>
+            </div> 
+        </section>
+        
+        <section class='b-columns'>
+            <div class='b-columns__column b-columns__column_1'>
+                <img class='b-columns__img' src='images/main_content/columns/hamburger.png'>
+                <h3 class='b-columns__header'>GET INSPIRED</h3>
+                <div class='b-columns__underline underline'></div>
+                <p class='b-columns__text'>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+            </div>            
+            <div class='b-columns__column b-columns__column_2'>
+                <img class='b-columns__img' src='images/main_content/columns/money.png'>
+                <h3 class='b-columns__header'>GET REWARDED</h3>
+                <div class='b-columns__underline underline'></div>
+                <p class='b-columns__text'>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+            </div>            
+            <div class='b-columns__column b-columns__column_3'>
+                <img class='b-columns__img' src='images/main_content/columns/cook.png'>
+                <h3 class='b-columns__header'>GET SOCIAL</h3>
+                <div class='b-columns__underline underline'></div>
+                <p class='b-columns__text'>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+            </div>
+        </section>
+        
+        <section class='b-app'>
+            <img class='b-app__main-image' src='images/main_content/iPhone/iPhone.png'> 
+            <article class='b-app__main-article'> 
+                <div class='b-app__main-article__header'><h3>INTRODUCING THE FUDI APP</h3></div>
+                <div class='b-app__underline underline'></div>
+                    <p class='b-app__main-article__text'> Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta. </p>
+                    <p class='b-app__main-article__text'>  Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. </p>
+                    <p class='b-app__main-article__text'>  Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa. </p> 
+                    <a href='http://www.reviewle.com/'> <img src='images/buttons/appstore.png' class='b-app__link b-app__link_apple'> </a>
+                    <a href='https://play.google.com'> <img src='images/buttons/googleplay.png' class='b-app__link b-app__link_google'> </a>
+                </div>
+            </article>
+        </section>
+        
+        <section class='b-slider'>
+            <div class='b-slider__div'> 
+                <div class='b-slider__review b-review__review__1'>
+                    <img class='b-slider__review__img' src='images/main_content/review/man_1.png'> 
+                    <p class='b-slider__review__text'> "I am so happy because I found this recipe, and it just made my life easier. <br/> 
+                        Thanks so much for sharing!" </p>
+                    <p class='b-slider__review__author'> Michael Dawson, San Francisco, CA</p>
+                </div>            
+                <div class='b-slider__review b-review__review__2'>
+                    <img class='b-slider__review__img' src='images/main_content/review/man_2.png'> 
+                    <p class='b-slider__review__text'> "This is the best recite, I'm gonna share with my gf. <br/> 
+                        Thanks a lot!" </p>
+                    <p class='b-slider__review__author'> Fred Baily, Washington, DC</p>
+                </div>            
+                <div class='b-slider__review b-review__review__3'>
+                    <img class='b-slider__review__img' src='images/main_content/review/man_3.png'> 
+                    <p class='b-slider__review__text'> "This recipe just made my life easier. <br/> 
+                        Thanks so much for sharing!" </p>
+                    <p class='b-slider__review__author'> Emily Fredriksen, Philadelphia, PA</p>
+                </div>
+                <div class='b-slider__controls'>
+                    <ul class='b-slider__controls__list'>
+                        <li class='b-slider__controls__button b-slider__controls__button_1 active'></li>
+                        <li class='b-slider__controls__button b-slider__controls__button_2'></li>
+                        <li class='b-slider__controls__button b-slider__controls__button_3'></li>
                     </ul>
                 </div>
             </div>
-            <a id='right'>></a>
+            <a class='b-slider__control b-slider__control_left'></a>
+            <a class='b-slider__control b-slider__control_right'></a>
         </section>
-        <section id="cuisines">
-            <h3>BROWSE BY CUISINES</h3>
-            <div class="cuisine_photos"> 
-                <ul class='cuisine_list'>
-                    <li class='cuisine_listitem row1'>
+
+        <section class='b-ciusunes'>
+            <h3 class='b-ciusunes__header'>BROWSE BY CUISINES</h3>
+            <div class='b-ciusunes__underline underline'></div>
+            <div class='b-ciusunes__photos'> 
+                <ul class='b-ciusunes__list'>
+                    <li class='b-ciusunes__list-item'>
                         <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=italian%20food"> 
-                            <p>
-                                <span class="numberof_recipes">327 Recipes</span> <br>
-                                <span class="country">ITALIAN</span>
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">327 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">ITALIAN</span>
                             </p>
-                            <img src="images/main_content/cuisines/italian.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/italian.png">
                         </a>   
                     </li>
-                    <li class='cuisine_listitem row1'>
-                        <a href="#">
-                            <p>
-                                <span class="numberof_recipes">856 Recipes</span> <br>
-                                <span class="country">INDIAN</span>  
+                    <li class='b-ciusunes__list-item'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=indian%20food">
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">856 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">INDIAN</span>
                             </p>
-                            <img src="images/main_content/cuisines/indian.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/indian.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row1'>
-                        <a href="#">
-                            <p>
-                                <span class="numberof_recipes">27 Recipes</span> <br>
-                                <span class="country">FRENCH</span>
+                    <li class='b-ciusunes__list-item'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=french%20food">
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">27 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">FRENCH</span>
                             </p>
-                            <img src="images/main_content/cuisines/french.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/french.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row1'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">174 Recipes</span> <br>
-                                <span class="country">STEACKHOUSE</span>
+                    <li class='b-ciusunes__list-item'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=steack"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">174 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">STEACKHOUSE</span>
                             </p>
-                            <img src="images/main_content/cuisines/steakhouse.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/steakhouse.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row1'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">731 Recipes</span> <br>
-                                <span class="country">SEAFOOD</span>
+                    <li class='b-ciusunes__list-item'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=seafood"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">731 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">SEAFOOD</span>
                             </p>
-                            <img src="images/main_content/cuisines/seafood.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/seafood.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row2'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">237 Recipes</span> <br>
-                                <span class="country">SUSHI</span>
+                    <li class='b-ciusunes__list-item b-ciusunes__list-item_row-2'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=sushi"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">237 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">SUSHI</span>
                             </p>
-                            <img src="images/main_content/cuisines/sushi.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/sushi.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row2'>  
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">529 Recipes</span> <br>
-                                <span class="country">MEXICAN</span>
+                    <li class='b-ciusunes__list-item b-ciusunes__list-item_row-2'>  
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=mexican%20food"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">529 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">MEXICAN</span>
                             </p>
-                            <img src="images/main_content/cuisines/mexican.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/mexican.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row2'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">145 Recipes</span> <br>
-                                <span class="country">CHINEZE</span>
+                    <li class='b-ciusunes__list-item b-ciusunes__list-item_row-2'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=chinese%20food"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">145 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">CHINEZE</span>
                             </p>
-                            <img src="images/main_content/cuisines/chinese.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/chinese.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row2'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">327 Recipes</span> <br>
-                                <span class="country">PIZZA</span>
+                    <li class='b-ciusunes__list-item b-ciusunes__list-item_row-2'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=pizza"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">327 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">PIZZA</span>
                             </p>
-                            <img src="images/main_content/cuisines/pizza.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/pizza.png">
                         </a>
                     </li>
-                    <li class='cuisine_listitem row2'>
-                        <a href="#"> 
-                            <p>
-                                <span class="numberof_recipes">1.437 Recipes</span> <br>
-                                <span class="country">AMERICAN</span>              
+                    <li class='b-ciusunes__list-item b-ciusunes__list-item_row-2'>
+                        <a href="https://www.google.com.ua/?ion=1&amp;espv=2#q=american%20food"> 
+                            <p class='b-ciusunes__text hidden'>
+                                <span class="b-ciusunes__recipes">1.437 Recipes</span> <br/>
+                                <span class="b-ciusunes__country">AMERICAN</span>              
                             </p>
-                            <img src="images/main_content/cuisines/american.png">
+                            <img class='b-ciusunes__image' src="images/main_content/cuisines/american.png">
                         </a>
                     </li>
                 </ul>
             </div>
-        
         </section>
 
-        </section>
-        <section id="numbers">
-            <div class="ciusine_numbers">
-                <p class="counter">23,567</p>
-                <p class="counter_text">Recipes available</p>
+        <section class="b-quantities">
+            <div class="b-quantities__counter">
+                <p class="b-quantities__p b-quantities__p_number">23,567</p>
+                <p class="b-quantities__p b-quantities__p_text">Recipes available</p>
             </div>
-            <div class="ciusine_numbers">
-                <p class="counter">431,729</p>
-                <p class="counter_text">Active Users</p>
+            <div class="b-quantities__counter">
+                <p class="b-quantities__p b-quantities__p_number">431,729</p>
+                <p class="b-quantities__p b-quantities__p_text">Active Users</p>
             </div>
-            <div class="ciusine_numbers">
-                <p class="counter">892,173</p>
-                <p class="counter_text">Positive Reviews</p>
+            <div class="b-quantities__counter">
+                <p class="b-quantities__p b-quantities__p_number">892,173</p>
+                <p class="b-quantities__p b-quantities__p_text">Positive Reviews</p>
             </div>
-            <div class="ciusine_numbers">
-                <p class="counter">56,581</p>
-                <p class="counter_text">Photos &amp; Videos</p>
+            <div class="b-quantities__counter">
+                <p class="b-quantities__p b-quantities__p_number">56,581</p>
+                <p class="b-quantities__p b-quantities__p_text">Photos &amp; Videos</p>
             </div>
-            <div class="ciusine_numbers">
-                <p class="counter">3,182</p>
-                <p class="counter_text">Spices and Herbs</p>
+            <div class="b-quantities__counter">
+                <p class="b-quantities__p b-quantities__p_number">3,182</p>
+                <p class="b-quantities__p b-quantities__p_text">Spices and Herbs</p>
             </div>
         </section>
     </main>
     
-    <footer id="footer">
-        <div id="copyright_text">
-            <p id="copyright">©2014 Fudi All Rights Reserved</p>
+    <footer class="b-footer">
+        <div class="b-footer__copyright">
+            <p class="b-footer__copyright__text">©2014 Fudi All Rights Reserved</p>
         </div>
-        <div id="design_text">
-            <p><span>DESIGN BY:</span> <a href='WWW.BEKADES.COM'>WWW.BEKADES.COM</a></p>
+        <div class="b-footer__design">
+            <p><span class="b-footer__design_left">DESIGN BY:</span> <a class='b-footer__design_link' href='WWW.BEKADES.COM'>WWW.BEKADES.COM</a></p>
         </div>
     </footer>
-    
-    <script src='scripts/jquery-2.1.4.min.js'></script>
-    <script src='scripts/slider.js'></script>
-    <script src='scripts/ticker.js'></script>
-    <script src='scripts/menu.js'></script>
+</body> 
+    <script type="text/javascript" src='scripts/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='scripts/jquery.countTo.js'></script>
+    <script type="text/javascript" src='scripts/scrollreveal.js'></script>
+    <script type="text/javascript" src='scripts/scroll.js'></script>
+    <script type="text/javascript" src='scripts/slider.js'></script>
+    <script type="text/javascript" src='scripts/hoverShow.js'></script>
+    <script type="text/javascript" src='scripts/flip.js'></script>
+    <script type="text/javascript" src='scripts/underline.js'></script>
     <script>
-        var s1 = new Slider('#review');
-        var t1 = new Ticker('#numbers');
+        var s1 = new Slide('.b-slider', '.b-review__review__1', '.b-slider__review', '.b-slider__control_left','.b-slider__control_right', '.b-slider__controls__button');
+        var h1 = new hoverShow('.b-ciusunes', '.b-ciusunes__list-item', 'p');
+        var f1 = new Flip('.b-columns', '.b-columns__column', '.b-columns__img');
+        var f2 = new Flip('.b-slider', '.b-slider__review', '.b-slider__review__img');
+        var u1 = new Underline('.b-columns__column', '.underline', '50%');
+        var u2 = new Underline('.b-app__main-article', '.underline', '70%');
+        var u3 = new Underline('.b-ciusunes', '.underline', '20%');
     </script>
-</body>
-
 </html>
